@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -91,20 +90,34 @@ class MyPage extends StatelessWidget {
                         _buildTextField("Confirm Password *", "Confirm your password", (value) {
                           // Обработчик для поля confirm password
                           confirmPassword = value;
-                        },
-                        ),
+                        }),
                         SizedBox(height: 10),
                         Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                           color: Color.fromARGB(218, 71, 157, 255).withOpacity(0.5),
-                           borderRadius: BorderRadius.circular(10),
+                            color: Color.fromARGB(218, 71, 157, 255).withOpacity(0.5),
+                            borderRadius: BorderRadius.circular(10),
                           ),
-                            padding: EdgeInsets.all(3),
+                          padding: EdgeInsets.all(3),
+                          child: Center(
                             child: Text(
-                            "Continue",
+                              "Continue",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 15),
+                        Center(
+                          child: Text(
+                            "Входить тут",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: const Color.fromARGB(255, 97, 97, 97),
+                              fontSize: 15,
+                              fontWeight: FontWeight.w400,
+                              decoration: TextDecoration.underline,
                             ),
                           ),
                         ),
