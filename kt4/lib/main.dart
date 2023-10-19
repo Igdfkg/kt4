@@ -28,9 +28,8 @@ class MyPage extends StatelessWidget {
     return CupertinoPageScaffold(
       child: Stack(
         children: [
-          // Background Image
           Image.asset(
-            'assets/images/backgr.jpg', // Путь к вашей фоновой картинке
+            'assets/images/backgr.jpg', //фон
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
@@ -47,7 +46,7 @@ class MyPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          'assets/images/logo2.png', // Путь к вашему изображению логотипа
+                          'assets/images/logo2.png', // лого
                           width: 250,
                           height: 80,
                         ),
@@ -74,22 +73,12 @@ class MyPage extends StatelessWidget {
                         ),
                         SizedBox(height: 20),
                         _buildTextField("Full Name *", "Enter your full name", (value) {
-                          // Обработчик для поля name
-                          name = value;
-                        }),
-                        _buildTextField("Create a Blender ID", "Full Name *", (value){
                         }),
                         _buildTextField("Email *", "Enter your email", (value) {
-                          // Обработчик для поля email
-                          email = value;
                         }),
                         _buildTextField("Password *", "Enter your password", (value) {
-                          // Обработчик для поля password
-                          password = value;
                         }),
                         _buildTextField("Confirm Password *", "Confirm your password", (value) {
-                          // Обработчик для поля confirm password
-                          confirmPassword = value;
                         }),
                         SizedBox(height: 10),
                         Container(
